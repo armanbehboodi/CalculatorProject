@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calculator project</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator__lcdBox">
+            <button class="calculator__lcd" value="">0</button>
+        </div>
+        <div class="calculator__row">
+            <button class="calculator__AC" value="ac" onclick="getNumber(this.value)">AC</button>
+            <button class="calculator__operator" value="/" onclick="calculate(this.value)">/</button>
+        </div>
+        <div class="calculator__row">
+            <button class="calculator__number calculator__number--active" value="7" onclick="getNumber(this.value)">7</button>
+            <button class="calculator__number" value="8" onclick="getNumber(this.value)">8</button>
+            <button class="calculator__number" value="9" onclick="getNumber(this.value)">9</button>
+            <button class="calculator__operator calculator__operator--active" value="x" onclick="calculate(this.value)">X</button>
+        </div>
+        <div class="calculator__row">
+            <button class="calculator__number calculator__number--active" value="4" onclick="getNumber(this.value)">4</button>
+            <button class="calculator__number" value="5" onclick="getNumber(this.value)">5</button>
+            <button class="calculator__number" value="6" onclick="getNumber(this.value)">6</button>
+            <button class="calculator__operator calculator__operator--active" value="-" onclick="calculate(this.value)">-</button>
+        </div>
+        <div class="calculator__row">
+            <button class="calculator__number calculator__number--active" value="1" onclick="getNumber(this.value)">1</button>
+            <button class="calculator__number" value="2" onclick="getNumber(this.value)">2</button>
+            <button class="calculator__number" value="3" onclick="getNumber(this.value)">3</button>
+            <button class="calculator__operator calculator__operator--active" value="+" onclick="calculate(this.value)">+</button>
+        </div>
+        <div class="calculator__row">
+            <button class="calculator__number calculator__number--last" value="0" onclick="getNumber(this.value)">0</button>
+            <button class="calculator__operator calculator__operator--active" value="=" onclick="calculate(this.value)">=</button>
+        </div>
+    </div>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
